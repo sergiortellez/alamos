@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#1e2020">
+
+    <title>PAE 1 | Seminare</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- FontAwesome -->
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='../../assets/style/gist.min.css'>
+    <link rel="stylesheet" href="../../assets/style/pae-dev2.min.css">
+    <link rel="stylesheet" href="../../assets/style/paes/semana1.min.css">
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+
+</head>
+
+<body>
+    <!------------------------------------------------->
+    <!--    navbar    -->
+    <!------------------------------------------------->
+
+    <nav>
+        <!--  *** logo *** -->
+        <a href="../../dev2.html" class="logo-nav-container">
+            <img class="dev2-logo" src="../../assets/images/dev2-logo.svg" alt="DEV2">
+        </a>
+        <!--  *** end logo *** -->
+
+        <!--  *** menu ***  -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars fa-2x"></i></a> <!-- mobil menu -->
+
+        <ul class="hide-on-med-and-down nav-style">
+            <li>
+                <a href="#cero">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Antes de empezar
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#uno">
+                    <i class="fa-duotone fa-square-1 num-nav"></i>
+                    <span class="topic">
+                        File-ing
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#dos">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        Tus primeras líneas de código
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Estructura tus propuestas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuatro">
+                    <i class="fa-duotone fa-square-4 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cover">
+                    <i class="fa-duotone fa-square-up num-nav"></i>
+                </a>
+            </li>
+        </ul>
+        <!--  *** end menu ***  -->
+
+        <!--  *** user ***  -->
+        <div class="user-nav-container hide-on-med-and-down dropdown-trigger" data-target="userDropdown">
+            <i class="fa-duotone fa-image-user"></i>
+        </div>
+        <!--  *** end user ***  -->
+    </nav>
+
+    <!-- side nav structure -->
+    <div class="sidenav" id="mobile-demo">
+        <div class="close-card">
+            <i class="fa-duotone fa-ellipsis-vertical"></i>
+        </div>
+        <!-- TODO: fill phone menu -->
+        <ul>
+            <li>
+                <a href="#cero" class="sidenav-close">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Antes de empezar
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#uno" class="sidenav-close">
+                    <i class="fa-duotone fa-square-1 num-nav "></i>
+                    <span class="topic">
+                        File-ing
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#dos" class="sidenav-close">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        Tus primeras líneas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres" class="sidenav-close">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Propuestas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuatro" class="sidenav-close">
+                    <i class="fa-duotone fa-square-4 num-nav "></i>
+                    <span class="topic">
+                        Entrega
+                    </span>
+                </a>
+            </li>
+
+            <!--  *** user ***  -->
+            <div class="user-nav-container">
+                <div><i class="fa-duotone fa-image-user"></i> Nombre del Alumno</div>
+                <hr>
+                <div class="colegio"></div>
+            </div>
+            <!--  *** end user ***  -->
+        </ul>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <div id="userDropdown" class="dropdown-content">
+        <div>Nombre del Alumno</div>
+        <hr>
+        <div class="colegio"></div>
+    </div>
+
+
+
+    <!------------------------------------------------->
+    <!--    end navbar    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    cover    -->
+    <!------------------------------------------------->
+    <section class="cover" id="cover">
+        <div class="responsive-container">
+            <header>
+                <div #id="numero">
+                    <span>PAE </span><span>1</span>
+                </div>
+                <div id="titulo">
+                    <i class="fa-duotone fa-quote-left"></i>
+                    <span>El blog del mundo</span>
+                    <i class="fa-duotone fa-quote-right"></i>
+                </div>
+            </header>
+
+            <div id="temas">
+                <div><i class="fa-duotone fa-book-open-reader"></i> <span class="texto-temas">Temas:</span></div>
+
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Introducción a HTML</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Estructura básica</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Títulos</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Párrafos</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Comentarios</span>
+            </div>
+            <div id="objetivo">
+                <span class="objetivo_titulo"><i class="fa-duotone fa-bullseye"></i> Objetivo:</span>
+
+                <p>Al terminar este PAE habrás practicado la creación de algunos archivos HTML, escrito la estructura básica y aplicado los conocimientos que adquiriste al usar títulos, párrafos y comentarios.</p>
+            </div>
+            <a href="#cero" id="arrowStart"><i class="fa-duotone fa-square-arrow-down continue"></i></a>
+        </div>
+
+
+    </section>
+    <!------------------------------------------------->
+    <!--    end cover    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    quote    -->
+    <!------------------------------------------------->
+    <section id="quote">
+        <div class="quoteText">
+            <i class="fa-duotone fa-quote-left"></i>
+
+            El talento es un don que trae consigo la obligación de servir a las demás personas, y no a nosotros mismos
+            <i class="fa-duotone fa-quote-right"></i>
+        </div>
+        <p class="autor">--José Martí</p>
+    </section>
+    <!------------------------------------------------->
+    <!--    end quote    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cero	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="cero">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>0</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Antes de empezar</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-3">
+                <!--  primer columna -->
+                <div>
+                    <p>Este es el primero de doce PAEs <a class=" tooltipped more-info" data-position="top" data-tooltip="Proyecto Acumulativo Entregable"><i class='fad fa-question-square'></i></a> que te ayudarán a crear el proyecto que hemos llamado «El Blog del mundo» donde encontrarás y
+                        publicarás
+                        tu
+                        investigación y opinión de algunos temas de interés global. <br> <span class='verbo'>Escogerás</span> una pareja con la que trabajarás los próximos meses y nuevamente te aconsejamos buscar una pareja de tu <span class='resaltado'>nivel académico</span>. No tomes esta decisión
+                        a
+                        la
+                        ligera, confiamos en que aprenderás mucho del camino que recorras.</p>
+                    <p>Al ser un trabajo en parejas a partir de este momento nos referiremos a la primer persona del equipo con este ícono <span class="user-cero">0: <i class='fak fa-user-0'></i></span> y a la segunda persona del equipo con su correspondiente <span class="user-one">1: <i
+                                class='fak fa-user-1'></i></span>.</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Crea un nuevo repositorio.</span>
+                    </div>
+                    <!-- end título -->
+                    <p> <span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class='verbo'>Crea</span> un nuevo repositorio en gitHub, el nombre que usarás para dicho repo será: <code class="terminal">grupo-apellidoPersona0-apellidoPersona1-blog_del_mundo</code> si olvidaste cómo
+                        hacerlo, siempre puedes consultar las instrucciones del
+                        PAE
+                        0: <a href="pae0.html#crea_repo" target="_blank"><i class="fa-duotone fa-link"></i></a> <br>
+                        No olvides añadir a <span class="user-one indirect">1: <i class='fak fa-user-1'></i></span> y a tu profesor como colaboradores del repositorio <a href="pae0.html#colaboradores_repo" target="_blank"><i class="fa-duotone fa-link"></i></a>.</p>
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cero	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	uno	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="uno">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>1</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">File-ing <i class='fad fa-folder-tree '></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns golden ***	-->
+            <div class="twoColumnsGolden mt-3 mb-3">
+                <!-- Columna pequeña -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>¿Estructura de archivos?</span>
+                    </div>
+                    <!-- end título -->
+                    <p>En esta sección nos ocuparemos de entender la <span class='concepto'>estructura de archivos</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="File-ing: carpetas y archivos ordenados, necesarios para el proyecto."><i
+                                class='fad fa-question-square'></i></a>
+                        . <span class='verbo'>Observa</span> el
+                        siguiente diagrama:</p>
+                    <img class="materialboxed" width="100%" src="../../assets/images/paes/fileing.svg">
+                    <p>Como todos tendremos un nombre diferente para la carpeta de nuestro repo, a partir de ahora le llamaremos <span class='resaltado'>root</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="raíz en inglés"><i class='fad fa-question-square'></i></a>. Notarás
+                        que
+                        dentro del <span class='concepto'>directorio</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="directorio = carpeta"><i class='fad fa-question-square'></i></a> <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> hay 2 archivos
+                        html y
+                        una carpeta llamada <span class='file'><i class='fas fa-folder'></i> <span>assets</span></span> que a su vez contiene a las carpetas <span class='file'><i class='fas fa-folder'></i> <span>images</span></span> y <span class='file'><i class='fas fa-folder'></i>
+                            <span>styles</span></span>.</p>
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Reglas de File-ing</span>
+                    </div>
+                    <!-- end título -->
+                    <p> No olvides siempre respetar las reglas que te presentamos a continuación, todos los PAEs asumen que seguiste la estructura propuesta y respetaste las reglas. Te ahorrarás muchos dolores de cabeza <i class='fad fa-bomb '></i>.</p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Reglas de file-ing</span>
+                            </div>
+                            <div class="collapsible-body list-true">
+                                <!-- cuerpo  -->
+                                <ol>
+                                    <li>No usar espacios en blanco. e.g. «mi carpeta»</li>
+                                    <li>Si necesitas espaciar una palabra usa cualquiera de estas posibilidades:</li>
+                                    <ol>
+                                        <li>mi-archivo</li>
+                                        <li>mi_archivo</li>
+                                    </ol>
+                                    <li>No usar caracteres especiales. e.g. acentos, puntos, comas, ñ, etc</li>
+                                    <li>Las carpetas no tienen terminación, evita usar puntos e.g. «mi.carpeta»</li>
+                                </ol>
+                                <span>Estas reglas también aplican para la creación de archivos.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!-- end Columna pequeña -->
+                <!-- Columna grande -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Construye una estructura de archivos</span>
+                    </div>
+                    <!-- end título -->
+                    <p>
+                        Crear carpetas y archivos en VCS es muy sencillo. <span class='verbo'>mira</span> el siguiente video con instrucciones precisas de cómo hacerlo.
+                    </p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Crear archivos y carpetas en VC</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/i7Yw4nhjnmg?version=3&loop=1&playlist=i7Yw4nhjnmg&modestbranding=1&rel=0&showinfo=0" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Crea archivos y carpetas en VCS</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                    <p>
+                        <span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class='verbo'>Clona</span> el repositorio que creaste en el paso anterior, si olvidaste cómo clonar un repositorio consulta el PAE 0: <a href="pae0.html#clona" target="_blank"><i
+                                class="fa-duotone fa-link"></i></a>
+                        <br> <span class='verbo'>Resuelve</span> las siguientes tareas:
+                    </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class="user-cero">0: <i class='fak fa-user-0'></i></span> En <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> <span class='verbo'>Crea</span> un archivo que se llame <span class='file'><i class='fab fa-html5'></i>
+                                    <span>index.html</span></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class="user-cero">0: <i class='fak fa-user-0'></i></span> En <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> <span class='verbo'>Crea</span> un directorio que se llame <span class='file'><i class='fas fa-folder'></i>
+                                    <span>assets</span></span>.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p> <span class="user-cero">0: <i class='fak fa-user-0'></i></span> Haz <span class='concepto'>add</span>, <span class='concepto'>commit</span> y <span class='concepto'>push</span> <a href="pae0.html#git_commands" target="_blank"><i class="fa-duotone fa-link"></i></a>. <span
+                            class='verbo'>Avisa</span> a <span class="user-one indirect">1: <i class='fak fa-user-1'></i></span> que puede
+                        empezar a
+                        trabajar.</p>
+                    <p>
+                        <span class="user-one">1: <i class='fak fa-user-1'></i></span> <span class='verbo'>Acepta</span> y <span class='verbo'> Clona</span> el repositorio que te ha enviado <span class="user-cero indirect">0: <i class='fak fa-user-0'></i></span>, si olvidaste cómo clonar un
+                        repositorio
+                        consulta el PAE 0: <a href="pae0.html#clona" target="_blank"><i class="fa-duotone fa-link"></i></a>
+                        <br> Dentro de <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> encontrarás un archivo <span class='file'><i class='fab fa-html5'></i> <span>index.html</span></span> y una carpeta <span class='file'><i class='fas fa-folder'></i>
+                            <span>assets</span></span> <span class='verbo'>Resuelve</span> ahora las siguientes tareas:
+                    </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class="user-one">1: <i class='fak fa-user-1'></i></span> En <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> <span class='verbo'>Crea</span> un archivo que se llame <span class='file'><i class='fab fa-html5'></i>
+                                    <span>propuestas.html</span></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class="user-one">1: <i class='fak fa-user-1'></i></span> En <span class='file'><i class='fas fa-folder'></i> <span>assets</span></span> <span class='verbo'>Crea</span> un directorio que se llame <span class='file'><i class='fas fa-folder'></i>
+                                    <span>images</span></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class="user-one">1: <i class='fak fa-user-1'></i></span> En <span class='file'><i class='fas fa-folder'></i> <span>assets</span></span> <span class='verbo'>Crea</span> un directorio que se llame <span class='file'><i class='fas fa-folder'></i>
+                                    <span>styles</span></span>.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Haz <span class='concepto'>add</span>, <span class='concepto'>commit</span> y <span class='concepto'>push</span> <a href="pae0.html#git_commands" target="_blank"><i class="fa-duotone fa-link"></i></a>. <span
+                            class='verbo'>Avisa</span> a <span class="user-cero indirect">0: <i class='fak fa-user-0'></i></span> que has terminado.</p>
+                </div>
+                <!-- end Columna grande -->
+            </div>
+            <!--	*** end 2 columns golden ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end uno	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	dos	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="dos">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>2</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Tus primeras líneas de código</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Estructura básica</span>
+                    </div>
+                    <!-- end título -->
+                    <p> <span class="user-cero">0: <i class='fak fa-user-0'></i></span> Empieza haciendo <span class='concepto'>pull</span> para que recibas los últimos cambios de <span class="user-one indirect">1: <i class='fak fa-user-1'></i></span>. Ahora en <span class='file'><i
+                                class='fab fa-html5'></i>
+                            <span>index.html</span></span> <span class='verbo'>intenta</span> usar las siguientes etiquetas para construir la <span class='concepto'>estructura básica</span> de
+                        HTML: </p>
+                    <!-- tags -->
+                    <div class="tags">
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>title</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>html</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/body</b><i class='fas fa-chevron-right'></i></span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>!DOCTYPE html</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/html</b><i class='fas fa-chevron-right'></i></span>
+
+                    </div>
+                    <div class="tags">
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/head</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i class='fas fa-chevron-right'></i></span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>head</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/title</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>meta <i style="color: green;">charset="utf-8"</i></b><i class='fas fa-chevron-right'></i></span>
+                    </div>
+
+                    <!-- end tags -->
+
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class='verbo'>Inserta</span> un <span class='concepto'>comentario</span> para indicar, cuando sea el caso, dónde abre y dónde cierra cada etiqueta. Haz <span class='concepto'>add</span>, <span
+                            class='concepto'>commit</span> y <span class='concepto'>push</span> <a href="pae0.html#git_commands" target="_blank"><i class="fa-duotone fa-link"></i></a>. <span class='verbo'>Avisa</span> a <span class="user-one indirect">1: <i class='fak fa-user-1'></i></span> que
+                        puede
+                        empezar a
+                        trabajar.
+                    </p>
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code data-gist-id='855266785ccd2eab80a41a6990819f5a' data-gist-hide-footer='true' data-gist-highlight-line=''></code>
+
+                    <!--Termina HTML Desplegado-->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Empieza, como siempre con un <span class='concepto'>pull</span> para obtener la versión más reciente del repositorio. En <span class='file'><i class='fab fa-html5'></i> <span>propuestas.html</span></span> <span
+                            class='verbo'>intenta</span> usar las siguientes etiquetas para construir la <span class='concepto'>estructura básica</span>
+                        de
+                        HTML: </p>
+                    <!-- tags -->
+                    <div class="tags">
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>title</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>html</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/body</b><i class='fas fa-chevron-right'></i></span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>!DOCTYPE html</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/html</b><i class='fas fa-chevron-right'></i></span>
+
+                    </div>
+                    <div class="tags">
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/head</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i class='fas fa-chevron-right'></i></span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>head</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>/title</b><i class='fas fa-chevron-right'></i></span>
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>meta <i style="color: green;">charset="utf-8"</i></b><i class='fas fa-chevron-right'></i></span>
+                    </div>
+
+                    <!-- end tags -->
+
+                    <p><span class="user-one">1: <i class='fak fa-user-1'></i></span> <span class='verbo'>Inserta</span> un <span class='concepto'>comentario</span> para indicar, cuando sea el caso, dónde abre y dónde cierra cada etiqueta. Haz <span class='concepto'>add</span>, <span
+                            class='concepto'>commit</span> y <span class='concepto'>pull</span> <a href="pae0.html#git_commands" target="_blank"><i class="fa-duotone fa-link"></i></a> y <span class='verbo'>avisa</span> a <span class="user-cero indirect">0: <i class='fak fa-user-0'></i></span> que
+                        haz
+                        terminado.
+                    </p>
+
+
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end dos	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	tres	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="tres">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>3</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Estructura tus propuestas</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumnsGolden mt-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>¿Por qué un blog? </span>
+                    </div>
+                    <!-- end título -->
+                    <p>¿Te has dado una vuelta por tiktok últimamente? ¿Qué tal las comidas familiares o con amigos? ¿No te parece que este acceso ilimitado a la expresión está creando una sociedad donde muchos de nosotros hablamos demasiado sin saber y muchas veces sin pensar? </p>
+                    <p>Tener una opinión es bueno, expresarla es sano, informarse es inteligente, no caer en confrontaciones con quien opina diferente es sabio. <br> «El blog del mundo» es un espacio donde hablarás de temas que te interesan. Pero no lo harás a la ligera. Aprenderás a informarte en
+                        <span class='resaltado'>fuentes confiables</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="spoiler alert: los memes de internet no son fuentes confiables."><i class='fad fa-question-square'></i></a> y a estructurar tus argumentos y opiniones de
+                        manera
+                        oral y escrita. </p>
+                    <p>A lo largo de estas doce semanas haremos un blog con <span class='resaltado'>4 temas principales</span> (2 por persona) y con muchas entradas <a class=" tooltipped more-info" data-position="top" data-tooltip="entrada de un blog = artículo"><i
+                                class='fad fa-question-square'></i></a> para manejar los sub-temas. Lo que deben hacer esta semana es proponer a sus profesores cuáles serán los temas a tratar.</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Elegir dos temas de trabajo. </span>
+                    </div>
+                    <!-- end título -->
+                    <p>Seguramente desde que te dijimos que podrías elegir temas de trabajo tienes algunas ideas en la cabeza. ¿Un deporte?, ¿Algún área del conocimiento universal?, ¿Un pasatiempo?, ¿Algun asunto político? <br> <span class='verbo'>Revisa</span> esta lista de requisitos para
+                        cada tema.</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                Debe ser un tema que te interesa o te apasiona (trabajarás varias semanas en esto)
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Elige un tema que le aporte valor al mundo. Antes de escoger un tema piensa en cómo lo abordarás para que tus posibles lectores se nutran intelectual o espiritualmente de tu trabajo.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                No le temas a abordar asuntos polémicos, pero recuerda el contexto en el que estás haciendo este trabajo. ¿Puedes conciliar tu temática con los valores que promueve tu escuela?
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                ¿Tu tema puede ser abordado sin lesionar a terceros o promover el odio?
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Cuando te pidamos que revises publicaciones académicas, consigas estadísticas y hagas análisis serios ¿Los datos del tema que elegiste estarán disponibles?
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mb-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Presenta tus temas.</span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> Empieza, como siempre, haciendo un <span class='concepto'>pull</span> para obtener la versión más reciente del repositorio. Encontrarás un archivo llamado <span class='file'><i class='fab fa-html5'></i>
+                            <span>propuestas.html</span></span> donde <span class="user-one indirect">1: <i class='fak fa-user-1'></i></span> ha escrito ya la estructura básica en HTML. Dentro de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i
+                                class='fas fa-chevron-right'></i></span> <span class='verbo'>escribirás</span> tus dos propuestas para temas del blog respetando la siguiente estructura: </p>
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code class="forbidden" data-gist-id='8615a31110d7345483c4810c7d32aeb1' data-gist-hide-footer='true' data-gist-highlight-line=''></code>
+
+                    <!--Termina HTML Desplegado-->
+                    <div class="important">
+                        <i class="fa-duotone fa-square-exclamation"></i> <span>Te recomendamos mucho <b>no copiar y pegar</b> el código muestra, jamás aprenderás a programar si no programas. Mejor entiéndelo y escríbelo por tu cuenta, equivocarse es una manera muy valiosa de aprender. </span>
+                    </div>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> haz <span class='concepto'>add</span>, <span class='concepto'>commit</span> y <span class='concepto'>pull</span> y avisa a <span class="user-one indirect">1: <i class='fak fa-user-1'></i></span> que ya puede
+                        empezar a
+                        trabajar.</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p><span class="user-one">1: <i class='fak fa-user-1'></i></span> Una vez que <span class="user-cero indirect">0: <i class='fak fa-user-0'></i></span> te ha notificado que es tu turno, haz <span class='concepto'>pull</span> para obtener la versión más reciente de su repo.</p>
+                    <p>Ve al archivo <span class='file'><i class='fab fa-html5'></i> <span>propuestas.html</span></span> y dentro de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i class='fas fa-chevron-right'></i></span> <span class='verbo'>escribirás</span> tus dos
+                        propuestas
+                        para temas del blog respetando la estructura de código que dimos en el ejemplo. </p>
+                    <p>Haz <span class='concepto'>add</span>, <span class='concepto'>commit</span> y <span class='concepto'>pull</span> y avisa a <span class="user-cero indirect">0: <i class='fak fa-user-0'></i></span> que has terminado.</p>
+
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span>Cuando sus profesores les notifiquen, además de la rubrica y la calificación no olviden <span class='verbo'>revisar</span> los comentarios respecto a
+                        sus
+                        temas, pues estos tendrán que ser aprobados por sus profesores. </p>
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end tres	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	cuatro	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="cuatro">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>4</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Entrega tu Trabajo</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumnsGolden mt-3">
+                <!--  primer columna -->
+                <div>
+                    <p>Nuevamente no es necesario que hagan algo para entregar su trabajo. Sin embargo hemos preparado una lista de verificación <i class='fad fa-clipboard-check ' style="color: yellowgreen;"></i> para su tranquilidad respecto a la entrega. </p>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Trabajo con git</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Observen como en este flujo de trabajo cada quien toma un turno para editar el repo. Esto es porque cuando editas la <span class='resaltado'>misma línea</span> del <span class='resaltado'>mismo archivo</span> al mismo tiempo git arrojará un error de <span
+                            class='concepto'>merging</span> a quien haga <span class='concepto'>push</span> al final. En las próximas semanas aprenderemos cómo conciliar estos errores para ser mucho más productivos. </p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                El repo tiene el nombre correcto (ver ejemplo) y agregaron como colaboradores a sus profesores.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                La estructura del file-ing es justo como aparece en el diagrama de la sección 1.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                El archivo <span class='file'><i class='fab fa-html5'></i> <span>index.html</span></span> tiene escrita la estructura básica.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                El archivo <span class='file'><i class='fab fa-html5'></i> <span>propuestas.html</span></span> tiene escrita la estructura básica.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                El archivo <span class='file'><i class='fab fa-html5'></i> <span>propuestas.html</span></span> tiene escritas cuatro propuestas de tema (2 por alumno) con la estructura que se solicitó en el la sección 3.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                Asegúrense de haber hecho <span class='concepto'>push</span> y que no quedan cambios por subir desde sus repos locales <a class=" tooltipped more-info" data-position="top" data-tooltip="La copia del repo que vive en tu computadora"><i
+                                        class='fad fa-question-square'></i></a> , pueden usar el comando: <code class="terminal">git status</code>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cuatro	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    footer    -->
+    <!------------------------------------------------->
+    <footer>
+        <img class="logo-colegio" src="../../assets/images/colegio.webp" width='397' height='200' alt="Colegio">
+        <div class="pwr-huin">
+            <span>Powered by </span>
+            <img class="logo-huin" src="../../assets/images/logo-huin-final-blanco-(sin-solutions).webp" width='auto' height='auto' alt="Human Inspiration">
+        </div>
+    </footer>
+    <!------------------------------------------------->
+    <!--    end footer    -->
+    <!------------------------------------------------->
+
+    <!-- Materialize: Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <!-- GASP 3 for animations on view -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <!-- gist-embed -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js'></script>
+    <!-- custom JS -->
+    <script src="../../assets/js/confignav_pae.min.js"></script>
+    <script src="../../assets/js/animations_pae.min.js"></script>
+    <script src="../../assets/js/parallax_image_selector.min.js"></script>
+    <script src="../../assets/js/deploy_school.min.js"></script>
+
+</body>
+
+</html>

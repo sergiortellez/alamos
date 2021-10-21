@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#1e2020">
+    <title>PAE 0 | Seminare </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- FontAwesome -->
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/style/gist.min.css">
+    <link rel="stylesheet" href="../../assets/style/pae-dev2.min.css">
+    <link rel="stylesheet" href="../../assets/style/paes/semana0.min.css">
+
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+
+</head>
+
+<body>
+    <!------------------------------------------------->
+    <!--    navbar    -->
+    <!------------------------------------------------->
+
+    <nav>
+        <!--  *** logo *** -->
+        <a href="../../dev2.html" class="logo-nav-container">
+            <img class="dev2-logo" src="../../assets/images/dev2-logo.svg" alt="DEV2">
+        </a>
+        <!--  *** end logo *** -->
+
+        <!--  *** menu ***  -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars fa-2x"></i></a> <!-- mobil menu -->
+
+        <ul class="hide-on-med-and-down nav-style">
+            <li>
+                <a href="#cero">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Deployment
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#uno">
+                    <i class="fa-duotone fa-square-1 num-nav"></i>
+                    <span class="topic">
+                        git
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#dos">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        ¿Qué es internet?
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Proyecto
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cover">
+                    <i class="fa-duotone fa-square-up num-nav"></i>
+                </a>
+            </li>
+        </ul>
+        <!--  *** end menu ***  -->
+
+        <!--  *** user ***  -->
+        <div class="user-nav-container hide-on-med-and-down dropdown-trigger" data-target="userDropdown">
+            <i class="fa-duotone fa-image-user"></i>
+        </div>
+        <!--  *** end user ***  -->
+    </nav>
+
+    <!-- side nav structure -->
+    <div class="sidenav" id="mobile-demo">
+        <div class="close-card">
+            <i class="fa-duotone fa-ellipsis-vertical"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="#cero" class="sidenav-close">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Deployment
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#uno" class="sidenav-close">
+                    <i class="fa-duotone fa-square-1 num-nav "></i>
+                    <span class="topic">
+                        git
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#dos" class="sidenav-close">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        ¿Qué es internet?
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres" class="sidenav-close">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Proyecto
+                    </span>
+                </a>
+            </li>
+
+            <!--  *** user ***  -->
+            <div class="user-nav-container">
+                <div><i class="fa-duotone fa-image-user"></i> Nombre del Alumno</div>
+                <hr>
+                <div class="colegio"></div>
+            </div>
+            <!--  *** end user ***  -->
+        </ul>
+    </div>
+    <!-- Dropdown Structure -->
+    <div id="userDropdown" class="dropdown-content">
+        <div>Nombre del Alumno</div>
+        <hr>
+        <div class="colegio"></div>
+    </div>
+
+
+
+    <!------------------------------------------------->
+    <!--    end navbar    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    cover    -->
+    <!------------------------------------------------->
+    <section class="cover" id="cover">
+        <div class="responsive-container">
+            <header>
+                <div #id="numero">
+                    <span>PAE </span><span>0</span>
+                </div>
+                <div id="titulo">
+                    <i class="fa-duotone fa-quote-left"></i>
+                    <span>Deployment & git</span>
+                    <i class="fa-duotone fa-quote-right"></i>
+                </div>
+            </header>
+
+            <div id="temas">
+                <div><i class="fa-duotone fa-book-open-reader"></i> <span class="texto-temas">Temas:</span></div>
+
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> ¿Qué es internet?</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Visual Code Studio</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> git</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> GitHub</span>
+            </div>
+            <div id="objetivo">
+                <span class="objetivo_titulo"><i class="fa-duotone fa-bullseye"></i> Objetivo:</span>
+
+                <p>Al finalizar esta semana habrás instalado la mayoría de los programas que usarás a lo largo del curso. Te familiarizarás con el concepto de un sistema de control de versiones como git y empezarás a practicar su uso.</p>
+            </div>
+            <a href="#cero" id="arrowStart"><i class="fa-duotone fa-square-arrow-down continue"></i></a>
+        </div>
+
+
+    </section>
+    <!------------------------------------------------->
+    <!--    end cover    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    quote    -->
+    <!------------------------------------------------->
+    <section id="quote">
+        <div class="quoteText">
+            <i class="fa-duotone fa-quote-left"></i>
+            Either write something worth reading or do something worth writing.
+            <i class="fa-duotone fa-quote-right"></i>
+        </div>
+        <p class="autor">--Benjamin Franklin</p>
+    </section>
+    <!------------------------------------------------->
+    <!--    end quote    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cero	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="cero">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>0</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Deployment</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <p class="m-1 mt-2"> Nos encanta que estés aquí <i class="fa-solid fa-face-smile" style="color: yellow;"></i>. Antes de empezar a trabajar, te guiaremos para instalar todos los programas y herramientas que necesitarás este año. Sigue con mucho cuidado las instrucciones que
+                siguen. </p>
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns">
+                <!-- Column 1 -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Instala Visual Code Studio <i class="fa-duotone fa-code"></i></span>
+                    </div>
+                    <!-- end título -->
+                    <p>Así como existen editores de texto que nos hacen el trabajo más sencillo y ameno como Google Docs o Word, existen muchos editores de código en el mercado. Escogimos para ti <span class='concepto'>Visual Code Studio</span> porque además de ser una herramienta gratuita, es la
+                        primera opción de muchos
+                        profesionales. <br>Si vamos a hacer esto, ¿Por qué no hacerlo como los profesionales? <i class="fa-solid fa-face-sunglasses" style="color: yellow;"></i></p>
+                    <p>Lo primero que debes hacer es <span class='verbo'>descargar</span> la aplicación. </p>
+
+                    <!--	*** botón ***	-->
+                    <div class="btn-container">
+                        <a href="https://code.visualstudio.com/download" class="waves-effect waves-light btn-out" target="_blank"> Descarga Visual Code Studio <i class="fa-duotone fa-arrow-right-from-bracket"></i> </a>
+                    </div>
+                    <!--	*** end botón ***	-->
+                </div>
+                <!-- end column 1 -->
+                <!-- Column 2 -->
+                <div>
+                    <p>
+                        A continuación te dejamos instrucciones de instalación para los tres sistemas operativos más populares, si trabajas con un sistema operativo diferente, acude a tu profesor.
+                    </p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>macOS <i class="fa-brands fa-apple"></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/5vcQAfvDsz0?version=3&playlist=5vcQAfvDsz0&modestbranding=1&rel=0&showinfo=0&start=46&end=92" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala Visual Code Studio en macOS | <i class="fa-duotone fa-stopwatch"></i> 0:46-1:32</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Windows <i class="fa-brands fa-windows"></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/X_Z7d04x9-E?version=3&playlist=X_Z7d04x9-E&modestbranding=1&rel=0&showinfo=0&start=71&end=129" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala Visual Code Studio en Windows | <i class="fa-duotone fa-stopwatch"></i> 1:11 - 2:09</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Linux <i class="fa-brands fa-linux"></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/ROXcgWe3Fsc?version=3&loop=1&playlist=ROXcgWe3Fsc&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala Visual Code Studio en Linux</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!-- end Column 2 -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-4">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Instala plugins para Visual Code Studio</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Una de las ventajas de VCS <a class=" tooltipped more-info" data-position="top" data-tooltip="Visual Code Studio"><i class='fad fa-question-square'></i></a> es que podemos personalizarlo con pequeñas "aplicaciones" a las que llamaremos plugins o widgets. Estos plugins hacen
+                        que
+                        VCS sea mucho más versatil y poderoso. <br> A continuación te mostramos cómo se instala un plugin para VCS:</p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Instala plugins en VCS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/QWhIh96rdVc?version=3&loop=1&playlist=QWhIh96rdVc&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala Plugins en VCS | ejemplo: Live Server</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p>Ahora que sabes cómo instalar plugins para VCS asegúrate de <span class='verbo'>buscar</span> e <span class='verbo'>instalar</span> los siguientes:</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                Live Server
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Live Share (instalará automáticamente Live Share Audio)
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Spanish - Code Spell Checker (Instalará Code Spell Checker)
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+
+            <!--	*** 2 columns golden ***	-->
+            <div class="twoColumnsGolden">
+                <!-- Columna pequeña -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Crea una cuenta de gitHub <i class="fa-brands fa-github"></i> </span>
+                    </div>
+                    <!-- end título -->
+                    <p>Como te han adelantado tus profesores, una de las primeras habilidades que desarrollarás es usar correctamente <span class='concepto'>git</span>. Para eso crearemos una cuenta en gitHub.</p>
+
+                    <!--	*** botón ***	-->
+                    <div class="btn-container">
+                        <a href="https://github.com/signup" class="waves-effect waves-light btn-out" target="_blank"> Ve a gitHub <i class="fa-duotone fa-arrow-right-from-bracket"></i> </a>
+                    </div>
+                    <!--	*** end botón ***	-->
+                </div>
+                <!-- end Columna pequeña -->
+                <!-- Columna grande -->
+                <div>
+
+                    <p> <i class="fa-duotone fa-circle-exclamation" style="color: red;"></i>
+                        Es muy importante que para crear tu cuenta de gitHub uses el <span class='resaltado'>correo electrónico</span> que te proporcionó tu escuela y cuando escojas un nombre de usuario procures usar <span class='resaltado'>apellido-apellido2-nombre</span>. Además debes <span
+                            class='verbo'>anotar</span> estos datos, pues los usaremos más adelante.</p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>¿Cómo crear una cuenta de GitHub?</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--Inicia Video de Youtube -->
+                                <figure class='embed-responsive embed-responsive-16by9 youtube'>
+                                    <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/LzVfVs5n3Gw?rel=0&controls=2&modestbranding=1&showinfo=0&vq=hd1080&start=126&end=357' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                                        allowfullscreen loading="lazy" title="video"></iframe>
+                                </figure>
+                                <figcaption class='youtube-caption'>
+                                    <span class='fab fa-youtube'></span> <span>Crea una cuenta de GitHub | <i class="fa-duotone fa-stopwatch"></i> 2:06 - 5:57</span>
+                                </figcaption>
+                                <!--Termina Video de Youtube -->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!-- end Columna grande -->
+            </div>
+            <!--	*** end 2 columns golden ***	-->
+
+            <hr class="horizontal-divider">
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Instala git <i class="fa-brands fa-git-alt"></i></span>
+                    </div>
+                    <!-- end título -->
+
+                    <p>En la siguiente sección te explicaremos qué es git. Por ahora confiamos en que logres instalar la aplicación en tu computadora. <br> A continuación te ofrecemos instrucciones de instalación para los sistemas operativos más populares y el enlace de descarga: </p>
+
+                    <!--	*** botón ***	-->
+                    <div class="btn-container">
+                        <a href="https://git-scm.com/downloads" class="waves-effect waves-light btn-out" target="_blank"> Descarga git <i class="fa-duotone fa-arrow-right-from-bracket"></i> </a>
+                    </div>
+                    <!--	*** end botón ***	-->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>macOS <i class="fa-brands fa-apple"></i> (manera fácil)</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/FxN8uDk65Oo?version=3&playlist=FxN8uDk65Oo&modestbranding=1&rel=0&showinfo=0&start=12&end=85" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala git en macOS con el instalador de UI (fácil) | <i class="fa-duotone fa-stopwatch"></i> 0:12 - 1:25</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>macOS <i class="fa-brands fa-apple"></i> (manera <i class="fa-duotone fa-rectangle-pro"></i>)</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/nXP3aU10oOU?version=3&playlist=nXP3aU10oOU&modestbranding=1&rel=0&showinfo=0&start=27&end=71" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala git desde la terminal en macOS | <i class="fa-duotone fa-stopwatch"></i> 0:28 - 2:28</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Windows <i class="fa-brands fa-windows"></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/jChUn5oaSW8?version=3&playlist=jChUn5oaSW8&modestbranding=1&rel=0&showinfo=0&start=180&end=462" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala git en Windows | <i class="fa-duotone fa-stopwatch"></i> 3:00 - 7:42</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Linux <i class="fa-brands fa-linux"></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/oV0spTF71AI?version=3&playlist=oV0spTF71AI&modestbranding=1&rel=0&showinfo=0&start=15&end=74" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Instala Git en Linux | <i class="fa-duotone fa-stopwatch"></i> 0:15 - 1:14</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+            <hr class="horizontal-divider">
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns pb-4 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Configura git en tu computadora.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Independientemente de qué SO <a class=" tooltipped more-info" data-position="top" data-tooltip="Sistema Operativo"><i class='fad fa-question-square'></i></a> tengas, configuraremos git desde la terminal de Visual code studio. Así que empecemos <span
+                            class='verbo'>abriendo</span>
+                        VCS para después abrir la terminal. Usa el menú ver (view) y escoge (Terminal)</p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Abre la terminal en VCS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/wOpWnGLAf2k?version=3&playlist=wOpWnGLAf2k&modestbranding=1&rel=0&showinfo=0&end=10" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Abre la terminal en VCS | <i class="fa-duotone fa-stopwatch"></i> 0:00 - 0:09</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                    <p>Al abrir la terminal te darás cuenta que puedes escribir comandos en ella. No te asustes, la terminal es la manera más directa de darle instrucciones a la computadora. </p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p><span class='verbo'>Escribe</span> los siguientes comandos en tu prompt <a class=" tooltipped more-info" data-position="top" data-tooltip="El cuadrito o línea (cursor) que parpadea en la terminal indicando que puedes escribir en ella."><i
+                                class='fad fa-question-square'></i></a>
+                        intercambiando <span class='concepto'>"miUsuario"</span> por tu nombre de usuario de <span class='resaltado'>gitHub</span>
+                        y <span class='concepto'>"miNombre@miColegio.edu.mx"</span>
+                        por el correo que te
+                        proporcionó <span class='resaltado'>tu escuela</span> y también usaste en gitHub. </p>
+                    <code class="terminal mt-2">git config --global user.name 'miUsuario'</code>
+                    <span>Ahora tu computadora sabe el nombre que usarás en git.</span>
+                    <code class="terminal mt-2" style="font-size: 0.9rem;">git config --global user.email 'miNombre@miColegio.edu.mx'</code>
+                    <span>Ahora tu computadora sabe cuál es tu correo para usar git.</span>
+                    <p>Para rectificar que lo hiciste correctamente puedes usar el comando:</p>
+                    <code class="terminal ">git config --list</code>
+                    <span>Debería desplegarse una lista con tus credenciales <a class=" tooltipped more-info" data-position="top" data-tooltip="Nombre de usuario y contraseña"><i class='fad fa-question-square'></i></a> de git</span>
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cero	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	uno	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="uno">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>1</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">git y tu primer repositorio</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>¿Qué es git?</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Aunque el tema debe ser ampliamente discutido en clase, hemos buscado un par de videos que te ayudarán a entender el concepto.</p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>¿Cómo funciona git?</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/ohNkP2_9Duw?version=3&loop=1&playlist=ohNkP2_9Duw&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Cómo funciona git?</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>¿Qué es git?</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/Uw8SIaAK-vw?version=3&loop=1&playlist=Uw8SIaAK-vw&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>¿Qué es Git?</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div id="crea_repo">
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Crea tu primer repositorio.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Sigue las instrucciones del siguiente video para crear tu primer repositorio en gitHub.</p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Crea tu primer repositorio en gitHub</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/GGTSf4pbVsY?version=3&loop=1&playlist=GGTSf4pbVsY&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Crea tu primer repo en gitHub</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+            <hr class="horizontal-divider">
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mb-3">
+                <!--  primer columna -->
+                <div id="clona">
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Clona y edita tu repositorio en VCS</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Ya has creado tu primer <span class='concepto'>repo</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="repo = repositorio"><i class='fad fa-question-square'></i></a> de git, pero ¿cómo puedes trabajar con él? </p>
+                    <p>Sigue las instrucciones del siguiente vídeo para clonar tu repositorio en VCS.</p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Clona tu primer repositorio en VCS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/fppiZP9gcUM?version=3&loop=1&playlist=fppiZP9gcUM&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Clona tu repo en VCS</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+
+                <div>
+                    <!-- título -->
+                    <div class="section-title" id="git_commands">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>git pull, git add, git commit, git push </span>
+                    </div>
+                    <!-- end título -->
+                    <p>Ya <span class='concepto'>clonaste</span> y editaste tu primer repositorio. ¿Pero cómo lo guardas en el servidor <a class=" tooltipped more-info" data-position="top" data-tooltip="la nube"><i class='fad fa-question-square'></i></a> de gitHub para que otros puedan colaborar
+                        contigo? El siguiente vídeo te explica las 4 instrucciones básicas de git. </p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Las instrucciones básicas de git</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/0wPU1KiHTJg?version=3&loop=1&playlist=0wPU1KiHTJg&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Git Commands</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Las instrucciones básicas de git (resumen)</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/vYgMZ7J3ypg?version=3&loop=1&playlist=vYgMZ7J3ypg&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Git commands (resumen)</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                    <!-- Tip -->
+                    <ul class="collapsible collapsible-tip">
+                        <li>
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span><i class="fa-duotone fa-signs-post"></i> ¿No puedes hacer push porque git dice que no tienes permiso? </span>
+                            </div>
+                            <div class="collapsible-body">
+                                <p>Si estás trabajando en una computadora compartida es posible que alguien más haya dado de alta sus credenciales de git en el equipo y VCS cree que eres esa persona. Además del procedimiento que se ha discutido en la sección «Configura git en tu computadora» tal vez
+                                    sea
+                                    necesario que <span class='verbo'>elimines</span> las credenciales de git de la computadora.</p>
+
+                                <p>Instrucciones para <a href="https://carldesouza.com/wrong-user-when-pushing-to-github-from-visual-studio-code/">Windows</a> </p>
+
+                                <p>Instrucciones para <a href="https://docs.github.com/es/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain">macOS</a> </p>
+
+
+
+
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end Tip -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end uno	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	dos	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="dos">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>2</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">¿Qué es internet?</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <p class="m-1 mt-4">Tu proyecto de esta semana consiste en contestar un cuestionario referente a los siguientes vídeos, es una excelente oportunidad para que por fin entiendas qué es internet y cómo funciona.</p>
+            <div class="grid-videos mb-4">
+                <!--1º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/Dxcc6ycZ73M?version=3&loop=1&playlist=Dxcc6ycZ73M&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>¿Qué es internet?</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 1º video-->
+                <!--2º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/ZhEf7e4kopM?version=3&loop=1&playlist=ZhEf7e4kopM&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Cables y WIFI</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 2º video-->
+                <!--3º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/5o8CwafCxnU?version=3&loop=1&playlist=5o8CwafCxnU&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Dirección IP & DNS</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 3º video-->
+                <!--4º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/AYdF7b3nMto?version=3&loop=1&playlist=AYdF7b3nMto&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Transmisión datos</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 4º video-->
+                <!--5º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/kBXQZMmiA4s?version=3&loop=1&playlist=kBXQZMmiA4s&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>HTTP & HTML</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 5º video-->
+                <!--6º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/ZghMPWGXexs?version=3&loop=1&playlist=ZghMPWGXexs&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Seguridad</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 6º video-->
+                <!--7º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/AuYNXgO_f3Y?version=3&loop=1&playlist=AuYNXgO_f3Y&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Crimen</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 7º video-->
+                <!--8º video-->
+                <div>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/LVV_93mBfSU?version=3&loop=1&playlist=LVV_93mBfSU&modestbranding=1&rel=0&showinfo=0&hl=es&cc_lang_pref=es&cc=1" loading="lazy" title="video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Búsqueda</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!--end 8º video-->
+            </div>
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end dos	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	tres	-->
+    <!------------------------------------------------->
+    <div class="scrollspy" id="tres">
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>3</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Proyecto</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <p class="m-1 mt-3"> El proyecto de esta semana lo haremos <span class='resaltado'>en parejas</span> . <span class='verbo'>Elige</span> una persona de tu grupo para colaborar. Las amistades son un asunto
+                genial, pero la amistad no siempre es compatible con el trabajo. <i class="fa-duotone fa-circle-exclamation" style="color: yellow;"></i> Te recomendamos mucho que busques una pareja <span class='resaltado'>de tu nivel académico</span> para generar la
+                mejor sinergia posible. </p>
+
+            <p> A partir de ahora usaremos este ícono <span class="user-cero">0: <i class="fak fa-user-0"></i></span> para referirnos a la primera persona del equipo. Así como este <span class="user-one">1: <i class="fak fa-user-1"></i></span> para referirnos a la segunda. <span
+                    class='verbo'>Organízate</span> con tu equipo para asignar quién trabajará en cada rol.
+
+            </p>
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns">
+                <!--  primer columna -->
+                <div id="colaboradores_repo">
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Crea un nuevo repositorio y añade colaboradores.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>¿Recuerdan las instrucciones <a href="#crea_repo"><i class="fa-duotone fa-link"></i></a> para crear un repo en gitHub? </p>
+
+                    <p>
+                        <span class="user-cero">0: <i class="fak fa-user-0"></i></span>
+                        <span class='verbo'> Crea</span> un nuevo repositorio, llámalo "<span class='resaltado'>cuestionario</span> " y sigue estas
+                        instrucciones para compartirlo con tu equipo y tus profesores.
+                    </p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Añade colaboradores a tu repo de gitHub</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/zjOmMDBGDK8?version=3&loop=1&playlist=zjOmMDBGDK8&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Añade colaboradores a tu repo</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                    <p><span class="user-one">1: <i class="fak fa-user-1"></i></span> Recibirás un correo electrónico notificándote que has sido invitado a colaborar en un repositorio.</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Crea un nuevo archivo en VCS</span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class="user-cero">0: <i class="fak fa-user-0"></i></span> Antes de poder crear un archivo debes <span class='verbo'>clonar</span> el repositorio en tu computadora, ¿recuerdas las instrucciones? <a href="#clona"><i class="fa-duotone fa-link"></i></a> </p>
+                    <p>Ya que has clonado el repositorio <span class='verbo'>consulta</span> las siguientes instrucciones para crear tu primer archivo. </p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Crea un archivo en VCS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/HuG40rj8ZxA?version=3&loop=1&playlist=HuG40rj8ZxA&modestbranding=1&rel=0&showinfo=0" loading="lazy" title="video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Nuevo archivo en VCS</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <p>Una vez hayas creado el archivo haz <span class='concepto'>pull</span> y comunica <i class="fa-duotone fa-comment-lines"></i> a <span class="user-one indirect">1: <i class="fak fa-user-1"></i></span> que puede empezar a trabajar.</p>
+                    <p><span class="user-one">1: <i class="fak fa-user-1"></i></span> Para clonar el repositorio del equipo en tu computadora usa la <span class='concepto'>URL</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="dirección, link"><i
+                                class='fad fa-question-square'></i></a> que te llegó por correo o pídesela a <span class="user-cero indirect">0: <i class="fak fa-user-0"></i></span> </p>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+            <hr class="horizontal-divider">
+
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>El cuestionario</span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class="user-one">1: <i class="fak fa-user-1"></i></span> Después de clonar el repositorio en tu computadora, encontrarás un archivo que se llama <span class='resaltado'>cuestionario.txt</span> En ese archivo podrás <span class='verbo' data-wow-delay='.2s'
+                            data-wow-offset='150'>copiar</span> las
+                        siguientes preguntas. </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                En tus palabras, ¿Qué es internet?
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Describe los medios físicos y de propagación de ondas por los que se transmite la información en internet.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                ¿Cómo se organiza internet? Habla de las direcciones IP y los DNS.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Describe el procedimiento por el cual una canción de Spotify llega del servidor de la compañía a tu celular.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Describe los protocolos que existen en internet, en específico HTTP y HTML
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                En dos párrafos cuéntanos lo que aprendiste sobre encriptación y llaves públicas.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">7</div>
+                            <div>
+                                En dos párrafos cuéntanos lo que aprendiste sobre cómo protegerte de los criminales en internet.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">8</div>
+                            <div>
+                                ¿Cómo funciona la búsqueda de google?
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p><span class="user-one">1: <i class="fak fa-user-1"></i></span> Antes de empezar a contestar las preguntas que te corresponden no olvides escribir en la <span class='resaltado'>parte superior</span> del documento tu <span class='resaltado'>nombre completo</span> y el de <span
+                            class="user-cero indirect">0: <i class="fak fa-user-0"></i></span>. Así como el <span class='resaltado'>grupo</span> en el que están. Un repo que no
+                        tiene nombres y grupo en la parte superior del documento <span class='resaltado'>no se evaluará</span>.</p>
+                    <p>
+                        Una vez que has
+                        copiado todas las preguntas contesta todas las nones <a class=" tooltipped more-info" data-position="top" data-tooltip="1,3,5,7"><i class='fad fa-question-square'></i></a>. Cuando hayas terminado
+                        de
+                        trabajar <span class='resaltado'>no olvides</span> hacer <span class='concepto'>add</span>, <span class='concepto'>commit</span>, y <pae class="concepto">push</pae> Si no recuerdas cómo hacerlo puedes
+                        consultar
+                        las instrucciones en este PAE <a href="#git_commands"><i class="fa-duotone fa-link"></i></a>.
+                        <br>
+                        Ahora comunica <i class="fa-duotone fa-comment-lines"></i> a <span class="user-cero indirect">0: <i class="fak fa-user-0"></i></span> que has terminado tu trabajo y puede añadir su parte.
+                    </p>
+                    <p class="mt-2"> <span class="user-cero">0: <i class="fak fa-user-0"></i></span> Una vez que <span class="user-one indirect">1: <i class="fak fa-user-1"></i></span> te haya comunicado <i class="fa-duotone fa-comment-lines"></i> que terminó de contestar las preguntas nones
+                        puedes volver a abrir el repositorio, no
+                        olvides
+                        que
+                        cada que
+                        abres el repositorio debes hacer un <span class='concepto'>pull</span> para obtener el contenido más actual. <br>
+                        Deberías estar viendo el cuestionario con todas las preguntas nones respondidas por <span class="user-one indirect">1: <i class="fak fa-user-1"></i></span>. Es hora de que <span class='verbo'>respondas</span> las preguntas que faltan, al terminar de trabajar no olvides
+                        hacer <span class='concepto'>add</span>,
+                        <span class='concepto'>commit</span>, y <span class='concepto'>push</span>. Si no recuerdas cómo hacerlo puedes
+                        consultar
+                        las instrucciones en este PAE <a href="#git_commands"><i class="fa-duotone fa-link"></i></a>.
+                        <br>
+                        Mantén comunicación constante con <span class="user-one indirect">1: <i class="fak fa-user-1"></i></span> para corregir posibles errores y pulir detalles de la entrega.
+                    </p>
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumnsGolden">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Trabajar con git</span>
+                    </div>
+                    <!-- end título -->
+                    <p>¿Se dieron cuenta cómo trabajaron en este proyecto? <br>
+                        En todo momento <span class="user-cero">0: <i class="fak fa-user-0"></i></span> estaba <span class='resaltado'>consciente</span> de lo que hacía <span class="user-one">1: <i class="fak fa-user-1"></i></span> y viceversa.
+                        Hubo <span class='concepto'>supervisión</span>, <span class='concepto'>comunicación</span>, <span class='concepto'>corresponsabilidad</span> y <span class='concepto'>retroalimentación</span>. Este flujo de trabajo tiene todas estas ventajas, aunque tal vez podríamos mejorar
+                        algo.
+                        ¿No sería genial que pudieras trabajar en un proyecto <span class='resaltado'>al mismo tiempo</span> que tu equipo?
+                        <br>
+                        Aprenderemos técnicas para trabajar más eficientemente conforme mejores tus conocimientos y confianza en git.
+                    </p>
+                    <p>Alguien podría argumentar que usar una herramienta colaborativa como «google docs» hubiera sido mucho más sencillo, pero deben recordar que estamos entrenando para colaborar en código, y para esa clase de tarea git es ideal.</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>¿Cómo entregar este trabajo?</span>
+                    </div>
+                    <!-- end título -->
+                    Otra maravilla de trabajar con git es que ya no tienes que hacer nada para enviar tu trabajo, olvídate de los correos, los archivos de drive, los usb o google classroom. Cuando añadiste colaboradores a tu repo ya has añadido a tu profesor. Ahora sólo es cuestión de tiempo para
+                    que te
+                    califiquen en el <span class="resaltado">mismo archivo</span> en el que has estado trabajando. Cuando tus profesores te lo comuniquen sólo has <span class='concepto'>pull</span> en tu repo para recibir tu calificación.
+                    <br>
+                    Para tu tranquilidad preparamos esta lista de verificación para asegurarte de que tu proyecto ha sido recibido satisfactoriamente:
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                Todos en el equipo hicieron <span class='concepto'>pull</span> a sus cambios.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                En la terminal de VCS usa el comado <code><span class="terminal">git status</span></code> para asegurarte de que todo está al día, si ves algunos archivos no sincronizados vuelve a hacer <span class='concepto'>add</span>, <span class='concepto'>commit</span> y <span
+                                    class='concepto'>push</span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Asegúrate de que tus profesores son colaboradores del repositorio. (recibirán un correo electrónico con la invitación).
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Para asegurarte totalmente que tu código está en el servidor de gitHub entra a la dirección del repo y ve a la pestaña 'code'. Lo que veas en esa ventana es lo que tu profesor recibirá al hacer <span class='concepto'>pull</span> .
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                En la parte superior del documento cuestionario.txt escribieron sus nombres y su grupo.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                Todos empezamos sin saber mucho. Cualquiera de los mejores programadores del mundo empezó igual que tú. Mantén comunicación constante con tus profesores y no te quedes con dudas.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p>¡Felicidades! has terminado tu primer PAE <i class="fa-duotone fa-trophy" style="color: yellow;"></i></p>
+                </div>
+                <!--  end segunda columna -->
+
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end tres	-->
+    <!------------------------------------------------->
+
+
+    <!------------------------------------------------->
+    <!--    footer    -->
+    <!------------------------------------------------->
+    <footer>
+        <img class="logo-colegio" src="../../assets/images/colegio.webp" width='397' height='200' alt="Colegio">
+        <div class="pwr-huin">
+            <span>Powered by </span>
+            <img class="logo-huin" src="../../assets/images/logo-huin-final-blanco-(sin-solutions).webp" width='auto' height='auto' alt="Human Inspiration">
+        </div>
+    </footer>
+    <!------------------------------------------------->
+    <!--    end footer    -->
+    <!------------------------------------------------->
+
+    <!-- Materialize: Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer> </script>
+    <!-- GASP 3 for animations on view -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" defer></script>
+    <!-- gist-embed -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js" defer></script>
+    <!-- custom JS -->
+    <script src="../../assets/js/confignav_pae.min.js" defer></script>
+    <script src="../../assets/js/animations_pae.min.js"></script>
+    <script src="../../assets/js/parallax_image_selector.min.js" defer></script>
+    <script src="../../assets/js/deploy_school.min.js" defer></script>
+</body>
+
+</html>
